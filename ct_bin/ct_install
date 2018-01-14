@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Called from the Dockerfile to save version information
+
+if [ -z "$1" ] || [ -z "$2" ]; then
+	echo "missing arguments"
+	exit 1
+fi
+
+echo "$1" > /IMAGE_VERSION
+echo "$2" > /MASTODON_VERSION
+echo "version $1 ($2) saved"
+exit 0
+

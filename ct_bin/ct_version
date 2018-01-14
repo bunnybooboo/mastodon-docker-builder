@@ -1,0 +1,15 @@
+#!/bin/sh
+
+export MASTODON_VERSION=`cat /MASTODON_VERSION`
+export IMAGE_VERSION=`cat /IMAGE_VERSION`
+
+echo "~~~ mastodon-docker $IMAGE_VERSION"
+
+if [ -n "$LOCAL_DOMAIN" ]; then
+	echo "~~~ instance <$LOCAL_DOMAIN>"
+	echo "~~~ database $DB_HOST:$DB_PORT/$DB_NAME"
+	echo "~~~    redis $REDIS_HOST:$REDIS_PORT [$REDIS_NAMESPACE]"
+else
+	echo "~~~ [no instance settings found in env]"
+fi
+
