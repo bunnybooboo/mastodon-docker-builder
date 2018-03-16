@@ -4,7 +4,5 @@
 export MASTODON_VERSION=$(< /MASTODON_VERSION)
 export IMAGE_VERSION=$(< /IMAGE_VERSION)
 
-ct_version
-
 exec "$@"
 

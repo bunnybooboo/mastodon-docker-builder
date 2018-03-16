@@ -9,8 +9,10 @@ image_name = 'maastodon/mastodon-docker'
 build_tag = '+maas.0.1.0'
 
 aliases = {
-    'latest': 'v2.1.3',
-    'v2.1': 'v2.1.0-rc3',
+    'latest': 'v2.3.1',
+    'v2.3': 'v2.3.1',
+    'v2.2': 'v2.2.0',
+    'v2.1': 'v2.1.3',
     'v2.0': 'v2.0.0',
     'v1.6': 'v1.6.1',
     'v1.5': 'v1.5.1',
@@ -19,7 +21,17 @@ aliases = {
 
 builds = [
     # Image tag         # Mastodon tag      # Dockerfile name
-    ('master',          'master',           'Dockerfile-v2.0.0'),
+    ('master',          '8de048f',          'Dockerfile-v2.3.0'),
+    ('v2.3.1',          'v2.3.1',           'Dockerfile-v2.3.0'),
+    ('v2.3.1-rc2',      'v2.3.1rc2',        'Dockerfile-v2.3.0'),
+    ('v2.3.1-rc1',      'v2.3.1rc1',        'Dockerfile-v2.3.0'),
+    ('v2.3.0',          'v2.3.0',           'Dockerfile-v2.3.0'),
+    ('v2.3.0-rc3',      'v2.3.0rc3',        'Dockerfile-v2.3.0'),
+    ('v2.3.0-rc2',      'v2.3.0rc2',        'Dockerfile-v2.3.0'),
+    ('v2.3.0-rc1',      'v2.3.0rc1',        'Dockerfile-v2.3.0'),
+    ('v2.2.0',          'v2.2.0',           'Dockerfile-v2.0.0'),
+    ('v2.2.0-rc2',      'v2.2.0rc2',        'Dockerfile-v2.0.0'),
+    ('v2.2.0-rc1',      'v2.2.0rc1',        'Dockerfile-v2.0.0'),
     ('v2.1.3',          'v2.1.3',           'Dockerfile-v2.0.0'),
     ('v2.1.2',          'v2.1.2',           'Dockerfile-v2.0.0'),
     ('v2.1.0',          'v2.1.0',           'Dockerfile-v2.0.0'),
