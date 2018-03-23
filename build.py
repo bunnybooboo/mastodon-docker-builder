@@ -21,7 +21,8 @@ aliases = {
 
 builds = [
     # Image tag         # Mastodon tag      # Dockerfile name
-    ('master',          '8de048f',          'Dockerfile-v2.3.0'),
+    ('master',          'HEAD',             'Dockerfile-v2.3.0'),
+    ('v2.3.2',          'v2.3.2',           'Dockerfile-v2.3.0'),
     ('v2.3.1',          'v2.3.1',           'Dockerfile-v2.3.0'),
     ('v2.3.1-rc2',      'v2.3.1rc2',        'Dockerfile-v2.3.0'),
     ('v2.3.1-rc1',      'v2.3.1rc1',        'Dockerfile-v2.3.0'),
