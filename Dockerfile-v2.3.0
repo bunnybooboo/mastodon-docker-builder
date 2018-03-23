@@ -75,6 +75,8 @@ RUN bundle config build.nokogiri --with-iconv-lib=/usr/local/lib --with-iconv-in
  && yarn cache clean
 
 COPY ./mastodon .
+COPY ./themes/ /mastodon/app/javascript/styles/
+COPY ./themes/themes.yml /mastodon/config/themes.yml
 
 # assets are generated now - it saves a lot of startup time and removes
 # the permission issue; /mastodon will be read-only except for tmp/
