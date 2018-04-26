@@ -6,7 +6,7 @@ import subprocess
 from argparse import ArgumentParser
 
 image_name = 'maastodon/mastodon-docker'
-build_tag = '+maas.0.2.0'
+build_tag = '+maas.0.3.0'
 
 aliases = {
     'latest': 'v2.3.3',

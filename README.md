@@ -12,9 +12,11 @@ On Docker Hub: https://hub.docker.com/r/maastodon/mastodon-docker/
 Included themes:
 
 - <https://github.com/skiant/mastodon-light-theme>
+- <https://github.com/Sylvhem/witches-town-theme>
 
 Image versions:
 
+- 0.3: Added witches\_town theme
 - 0.2: Added mastodon\_light theme
 - 0.1: Initial version
 
