@@ -76,6 +76,7 @@ RUN bundle config build.nokogiri --with-iconv-lib=/usr/local/lib --with-iconv-in
 
 COPY ./mastodon .
 COPY ./themes/ /mastodon/app/javascript/styles/
+COPY ./themes_public/ /mastodon/public/
 COPY ./themes/themes.yml /mastodon/config/themes.yml
 
 # assets are generated now - it saves a lot of startup time and removes

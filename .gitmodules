@@ -1,3 +1,6 @@
 [submodule "mastodon"]
 	path = mastodon
 	url = https://github.com/tootsuite/mastodon.git
+[submodule "themes_dist/witches-town-theme"]
+	path = themes_src/witches-town-theme
+	url = https://github.com/Sylvhem/witches-town-theme.git
